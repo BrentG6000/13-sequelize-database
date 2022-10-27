@@ -10,7 +10,7 @@ router.get('/', async (req, res) => {
     const categoryData = await Category.findAll({
       include: [{ model: Product }],
     });
-    res.status(200).json(catgegoryData);
+    res.status(200).json(categoryData);
   } catch (err) {
     res.status(500).json(err);
   }
@@ -49,9 +49,12 @@ router.put('/:id', async (req, res) => {
   // Guessed on this one
   try {
     const categoryData = await Category.update({
-      where: {
-        id: req.params.id,
-      },
+      category_name: req.body.category_name
+    },
+    {
+        where: {
+          id: req.params.id,
+        }
     });
 
     if (!categoryData) {
