@@ -16,7 +16,7 @@ for that user "DB_PASSWORD=". Run the Develop/db/schema.sql file in mySQL to cre
 
 This app simply creates example database entries that can be tested through Postman or Insomnia.
 
-Here is a video showing all of the routes: 
+Here is a video showing all of the routes: https://drive.google.com/file/d/1bOltO_oES37aEak9JXj1wGmXaI7d7Qzf/view
 
 
 ## License
